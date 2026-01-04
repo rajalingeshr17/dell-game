@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000";
+const API = "https://dell-game-backend.onrender.com";
 
 export default function Admin() {
   const [users, setUsers] = useState([]);
