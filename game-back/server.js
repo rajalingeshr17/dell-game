@@ -1,6 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+app.use(cors({
+  origin: "https://dell-game-frontend.onrender.com"
+}));
+
 const multer = require("multer");
 require("dotenv").config();
 
