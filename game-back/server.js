@@ -1,14 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
-app.use(cors({
-  origin: "https://dell-game-frontend.onrender.com"
-}));
 
 const multer = require("multer");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://dell-game-frontend.onrender.com", // replace with your frontend URL
+  methods: ["GET","POST","PUT","DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 /* ---------------- MongoDB ---------------- */
