@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-  origin: "https://dell-game-frontend.onrender.com", // replace with your frontend URL
+  origin: "https://dell-game-front.onrender.com", // replace with your frontend URL
   methods: ["GET","POST","PUT","DELETE"],
   credentials: true
 }));
